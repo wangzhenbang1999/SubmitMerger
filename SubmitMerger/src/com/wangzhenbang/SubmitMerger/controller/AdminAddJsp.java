@@ -13,7 +13,13 @@ public class AdminAddJsp extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("WEB-INF/backstage/admin/add.jsp").forward(request, response);
+        if(request.getSession().getAttribute("isLogin")!=null){
+            request.setAttribute("msg","");
+            request.getRequestDispatcher("WEB-INF/backstage/admin/add.jsp").forward(request, response);
+        }else{
+            request.setAttribute("msg","请先登陆");
+            request.getRequestDispatcher("/login.jsp").forward(request, response);
+        }
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

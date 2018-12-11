@@ -24,20 +24,18 @@ public class AdminAdd extends HttpServlet {
         String password = request.getParameter("password");
         String nickname = request.getParameter("nickname");
         boolean validate = true;
+        //提示交给前端去做
         if(username ==null || "".equals(username)){
-            request.setAttribute("usernameError", "用户名不能为空");
             validate = false;
         }else{
             request.setAttribute("username", username);
         }
         if(password ==null || "".equals(password)){
-            request.setAttribute("passwordError", "密码不能为空");
             validate = false;
         }else{
             request.setAttribute("password", password);
         }
         if(nickname ==null || "".equals(nickname)){
-            request.setAttribute("nicknameError", "昵称不能为空");
             validate = false;
         }else{
             request.setAttribute("nickname", nickname);

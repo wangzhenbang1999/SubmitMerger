@@ -21,11 +21,10 @@ public class AdminUpdate extends HttpServlet {
         String nickname = request.getParameter("nickname");
         boolean validate = true;
         if(password ==null || "".equals(password)){
-            request.setAttribute("passwordError", "密码不能为空");
+            //提示交给前端
             validate = false;
         }
         if(nickname ==null || "".equals(nickname)){
-            request.setAttribute("nicknameError", "昵称不能为空");
             validate = false;
         }
         if(!validate) {

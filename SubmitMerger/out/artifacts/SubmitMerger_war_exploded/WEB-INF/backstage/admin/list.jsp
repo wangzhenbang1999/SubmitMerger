@@ -13,7 +13,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Insert title here</title>
     <!-- 分页 -->
-    <link rel="stylesheet" type="text/css" href="backstage/css/page.css"/>
 </head>
 <body>
 <jsp:include page="../nav.jsp">
@@ -81,22 +80,6 @@
     </c:forEach>
 </table>
 
-<div style="text-align: center;margin: 42px 0;">
-    <div id="pagination" class="paging"></div>
-</div>
-
-<script src="backstage/js/jquery-1.7.2.js" type="text/javascript"></script>
-<script src="backstage/js/page.js" type="text/javascript"></script>
-<script type="text/javascript">
-    $(function() {
-        Pagination.Init(document.getElementById('pagination'), {
-            pageTotal: parseInt("${pageInfo.getPages()}"),    // 总页数
-            currentPage: parseInt("${pageInfo.getCurrentPage()}"), // 当前页
-            step: 3,          // 当前页前后显示的页数
-            url:"list.jsp?username=${param.username}&nickname=${param.nickname}"
-        });
-    });
-</script>
 
 </body>
 </html>

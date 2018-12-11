@@ -24,6 +24,7 @@
         </tr>
         <tr><td><input type="submit" value="用户登录"/></td></tr>
     </table>
+    <h3>${msg}</h3>
 
 </form>
 </body>
