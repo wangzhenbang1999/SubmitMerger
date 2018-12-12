@@ -19,11 +19,11 @@ public class AdminSetStatus extends HttpServlet {
         IAdminDao adminDao = DAOFactory.getAdminDao();
         Admin a = adminDao.findById(id);
         if(a.getStatus()==0) {
-            a.setStatus(1);
+            adminDao.updateStatus("1",id);
         } else {
-            a.setStatus(0);
+            adminDao.updateStatus("0",id);
         }
-        adminDao.update(a);
+
         response.sendRedirect("list.jsp");
 
 

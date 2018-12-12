@@ -7,6 +7,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="SubmitMerger" />
         </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/../3.数据池/lib/c3p0-0.9.5.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../3.数据池/lib/mchange-commons-java-0.2.11.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../3.数据池/lib/commons-dbutils-1.7.jar" />
+        </element>
       </element>
     </root>
   </artifact>

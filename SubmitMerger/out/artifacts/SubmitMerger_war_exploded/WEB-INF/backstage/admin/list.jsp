@@ -73,7 +73,7 @@
             </td>
             <c:if test="${admin.getAdminType()==1}">
                 <td>
-                    <a href="<%=request.getContextPath()%>/AdminDelete?id=${a.getId()}">删除</a>&nbsp;<a href="<%=request.getContextPath()%>/AdminUpdate?id=${a.getId()}">更新</a>
+                    <a href="<%=request.getContextPath()%>/AdminDelete?id=${a.getId()}">删除</a>&nbsp;<a href="<%=request.getContextPath()%>/update.jsp?id=${a.getId()}">更新</a>
                 </td>
             </c:if>
         </tr>

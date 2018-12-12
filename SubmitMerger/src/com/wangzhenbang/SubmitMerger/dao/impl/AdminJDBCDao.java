@@ -3,8 +3,12 @@ package com.wangzhenbang.SubmitMerger.dao.impl;
 import com.wangzhenbang.SubmitMerger.dao.IAdminDao;
 import com.wangzhenbang.SubmitMerger.exception.SubmitMergerException;
 import com.wangzhenbang.SubmitMerger.po.Admin;
+import com.wangzhenbang.SubmitMerger.util.C3P0Utils;
 import com.wangzhenbang.SubmitMerger.util.JDBCUtil;
 import com.wangzhenbang.SubmitMerger.util.PageInfo;
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -17,111 +21,54 @@ public class AdminJDBCDao implements IAdminDao {
 
     @SuppressWarnings("resource")
     @Override
-    public void add(Admin admin) {
-        Connection con = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
+    public void add(String username,String password,String nickname)  {
         try {
-            con = JDBCUtil.getConnection();
-            //判断用户是否存在
-            String sql = "select count(id) from admin where username=?";
-            ps = con.prepareStatement(sql);
-            ps.setString(1, admin.getUsername());
-            rs = ps.executeQuery();
-            int count = 0;
-            while(rs.next()) {
-                count = rs.getInt(1);
-            }
-            if(count>0) throw new SubmitMergerException("要添加的管理员用户已经存在，不能添加!");
-            //添加用户
-            sql = "insert into admin (username,password,nickname,adminType,status) value (?,?,?,?,?)";
-            ps = con.prepareStatement(sql);
-            ps.setString(1, admin.getUsername());
-            ps.setString(2, admin.getPassword());
-            ps.setString(3, admin.getNickname());
-            ps.setInt(4, admin.getAdminType());
-            ps.setInt(5, admin.getStatus());
-            ps.executeUpdate();
+            QueryRunner runner = new QueryRunner(C3P0Utils.getDataSource());
+            runner.update("insert into admin (username,password,nickname,adminType,status) value (?,?,?,?,?)",username,password,nickname,0,0);
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            JDBCUtil.close(rs);
-            JDBCUtil.close(ps);
-            JDBCUtil.close(con);
         }
     }
-
     @Override
     public void delete(int id) {
-        Connection con = null;
-        PreparedStatement ps = null;
         try {
-            con = JDBCUtil.getConnection();
-            String sql = "delete from admin where id=?";
-            ps = con.prepareStatement(sql);
-            ps.setInt(1, id);
-            ps.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            JDBCUtil.close(ps);
-            JDBCUtil.close(con);
-        }
-    }
-
-    @Override
-    public void update(Admin admin) {
-        Connection con = null;
-        PreparedStatement ps = null;
-        try {
-            con = JDBCUtil.getConnection();
-            String sql = "update admin set password=?,nickname=?,adminType=?,status=? where id=?";
-            ps = con.prepareStatement(sql);
-            ps.setString(1, admin.getPassword());
-            ps.setString(2, admin.getNickname());
-            ps.setInt(3, admin.getAdminType());
-            ps.setInt(4, admin.getStatus());
-            ps.setInt(5, admin.getId());
-            ps.executeUpdate();
+            QueryRunner runner = new QueryRunner(C3P0Utils.getDataSource());
+            runner.update("delete from admin where id=?",id);
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
     @Override
-    public List<Admin> list(String username, String nickname) {
-        List<Admin> admins = new ArrayList<Admin>();
-        Connection con = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
+    public void update(String password,String nickname,int id) {
         try {
-            con = JDBCUtil.getConnection();
-            String sql = "select id,username,password,nickname,adminType,status from admin where 1=1";
-            if(username != null && !username.equals("")) {
-                sql += " and username like '%"+username+"%'";
-            }
-            if(nickname != null && !nickname.equals("")) {
-                sql += " and nickname like '%"+nickname+"%'";
-            }
-            ps = con.prepareStatement(sql);
-            rs = ps.executeQuery();
-            Admin a = null;
-            while(rs.next()) {
-                a = new Admin();
-                a.setId(rs.getInt("id"));
-                a.setUsername(rs.getString("username"));
-                a.setPassword(rs.getString("password"));
-                a.setNickname(rs.getString("nickname"));
-                a.setAdminType(rs.getInt("adminType"));
-                a.setStatus(rs.getInt("status"));
-                admins.add(a);
-            }
+            QueryRunner runner = new QueryRunner(C3P0Utils.getDataSource());
+            System.out.println(3+password+nickname);
+            runner.update("update admin set password=?,nickname=? where id=?",nickname,password,id);
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            JDBCUtil.close(rs);
-            JDBCUtil.close(ps);
-            JDBCUtil.close(con);
+        }
+    }
+
+    @Override
+    public void updateStatus(String s, int id) {
+        try {
+            QueryRunner runner = new QueryRunner(C3P0Utils.getDataSource());
+            runner.update("update admin set status=? where id=?",s,id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public List<Admin> list() {
+        QueryRunner runner = new QueryRunner(C3P0Utils.getDataSource());
+        // 2.执行添加
+        List<Admin> admins = null;
+        try {
+            admins = runner.query("select * from admin", new BeanListHandler<Admin>(Admin.class));
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return admins;
     }
@@ -194,97 +141,38 @@ public class AdminJDBCDao implements IAdminDao {
 
     @Override
     public Admin findByName(String username) {
-        Connection con = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        Admin a = null;
+        QueryRunner runner = new QueryRunner(C3P0Utils.getDataSource());
+        Admin admin = null;
         try {
-            con = JDBCUtil.getConnection();
-            String sql = "select id,username,password,nickname,adminType,status from admin where username=?";
-            ps = con.prepareStatement(sql);
-            ps.setString(1, username);
-            rs = ps.executeQuery();
-            while(rs.next()) {
-                a = new Admin();
-                a.setId(rs.getInt("id"));
-                a.setNickname(rs.getString("nickname"));
-                a.setPassword(rs.getString("password"));
-                a.setUsername(rs.getString("username"));
-                a.setAdminType(rs.getInt("adminType"));
-                a.setStatus(rs.getInt("status"));
-            }
+            admin = runner.query("select id,username,password,nickname,adminType,status from admin where username=?", new BeanHandler<Admin>(Admin.class), username);
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            JDBCUtil.close(rs);
-            JDBCUtil.close(ps);
-            JDBCUtil.close(con);
         }
-        return a;
+        return admin;
     }
 
     @Override
     public Admin login(String username, String password) {
-        Connection con = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        Admin a = null;
+        QueryRunner runner = new QueryRunner(C3P0Utils.getDataSource());
+        Admin admin = null;
         try {
-            con = JDBCUtil.getConnection();//异常
-            String sql = "select id,username,password,nickname,adminType,status from admin where username=? and password=?";
-            ps = con.prepareStatement(sql);
-            ps.setString(1, username);
-            ps.setString(2, password);
-            rs = ps.executeQuery();
-            while(rs.next()) {
-                a = new Admin();
-                a.setId(rs.getInt("id"));
-                a.setUsername(rs.getString("username"));
-                a.setPassword(rs.getString("password"));
-                a.setNickname(rs.getString("nickname"));
-                a.setAdminType(rs.getInt("adminType"));
-                a.setStatus(rs.getInt("status"));
-            }
-            if(a==null) throw new SubmitMergerException("用户名或者密码不正确");
+            admin = runner.query("select id,username,password,nickname,adminType,status from admin where username=? and password=?", new BeanHandler<Admin>(Admin.class), username,password);
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            JDBCUtil.close(rs);
-            JDBCUtil.close(ps);
-            JDBCUtil.close(con);
         }
-        return a;
+        return admin;
     }
 
     @Override
     public Admin findById(int id) {
-        Connection con = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        Admin a = null;
+        QueryRunner runner = new QueryRunner(C3P0Utils.getDataSource());
+        Admin admin = null;
         try {
-            con = JDBCUtil.getConnection();
-            String sql = "select id,username,password,nickname,adminType,status from admin where id=?";
-            ps = con.prepareStatement(sql);
-            ps.setInt(1, id);
-            rs = ps.executeQuery();
-            while(rs.next()) {
-                a = new Admin();
-                a.setId(rs.getInt("id"));
-                a.setNickname(rs.getString("nickname"));
-                a.setPassword(rs.getString("password"));
-                a.setUsername(rs.getString("username"));
-                a.setAdminType(rs.getInt("adminType"));
-                a.setStatus(rs.getInt("status"));
-            }
+            admin = runner.query("select id,username,password,nickname,adminType,status from admin where id=?", new BeanHandler<Admin>(Admin.class), id);
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            JDBCUtil.close(rs);
-            JDBCUtil.close(ps);
-            JDBCUtil.close(con);
         }
-        return a;
+        return admin;
     }
 
 }

@@ -19,6 +19,7 @@ public class AdminUpdate extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         String password = request.getParameter("password");
         String nickname = request.getParameter("nickname");
+        System.out.println(password+nickname);
         boolean validate = true;
         if(password ==null || "".equals(password)){
             //提示交给前端
@@ -28,16 +29,12 @@ public class AdminUpdate extends HttpServlet {
             validate = false;
         }
         if(!validate) {
-
             request.getRequestDispatcher("WEB-INF/backstage/admin/update.jsp").forward(request, response);
-
         }
         IAdminDao adminDao = DAOFactory.getAdminDao();
-        Admin a = adminDao.findById(id);
-        a.setNickname(nickname);
-        a.setPassword(password);
         try{
-            adminDao.update(a);
+            System.out.println(2+password+nickname);
+            adminDao.update(nickname,password,id);
             response.sendRedirect("list.jsp");
         } catch(SubmitMergerException ignored) {
 

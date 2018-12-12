@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface AdminService {
     public boolean login(HttpServletRequest request, String username,String password);
-    public List<Admin> list(String username, String nickname);
+    public List<Admin> list();
     public PageInfo list(String username, String nickname, String currentPage, int pageSize);
 }

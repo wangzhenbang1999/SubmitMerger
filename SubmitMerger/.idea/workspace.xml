@@ -6,7 +6,39 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6664e40-94ca-4df3-8139-fff886ffc4e3" name="Default" comment="" />
+    <list default="true" id="d6664e40-94ca-4df3-8139-fff886ffc4e3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/c3p0-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/C3P0Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SubmitMerger_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SubmitMerger_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubmitMerger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SubmitMerger.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/backstage/admin/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/backstage/admin/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/controller/AdminAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/controller/AdminAdd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/controller/AdminLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/controller/AdminLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/controller/AdminSetStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/controller/AdminSetStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/controller/AdminUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/controller/AdminUpdate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/dao/IAdminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/dao/IAdminDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/dao/impl/AdminJDBCDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/dao/impl/AdminJDBCDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SubmitMerger_war_exploded/WEB-INF/classes/com/wangzhenbang/SubmitMerger/service/impl/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/controller/AdminAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/controller/AdminAdd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/controller/AdminLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/controller/AdminLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/controller/AdminSetStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/controller/AdminSetStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/controller/AdminUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/controller/AdminUpdate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/dao/IAdminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/dao/IAdminDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/dao/impl/AdminJDBCDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/dao/impl/AdminJDBCDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SubmitMerger/com/wangzhenbang/SubmitMerger/service/impl/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminSetStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminSetStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/IAdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/IAdminDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/impl/AdminJDBCDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/impl/AdminJDBCDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/backstage/admin/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/backstage/admin/list.jsp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,83 +71,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AdminList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminList.java">
+      <file leaf-file-name="JDBCUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/JDBCUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminLogin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminLogin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminLoginJsp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminLoginJsp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminLogout.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminLogout.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminSetStatus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminSetStatus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminUpdate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminUpdate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-100">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminUpdateJsp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminUpdateJsp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+            <state relative-caret-position="25">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,8 +86,8 @@
       <file leaf-file-name="IAdminDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/IAdminDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="216">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,14 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ICustomerDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/ICustomerDao.java">
+      <file leaf-file-name="CustomerJDBCDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/impl/CustomerJDBCDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-350">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -150,8 +107,8 @@
       <file leaf-file-name="AdminJDBCDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/impl/AdminJDBCDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6025">
-              <caret line="241" column="45" selection-start-line="241" selection-start-column="45" selection-end-line="241" selection-end-column="45" />
+            <state relative-caret-position="900">
+              <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,6 +127,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -179,12 +139,9 @@
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/ICustomerDao.java" />
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/exception/SubmitMergerException.java" />
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/DAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/service/AdminService.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/backstage/error.jsp" />
         <option value="$PROJECT_DIR$/sql/init.sql" />
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/impl/CustomerJDBCDao.java" />
-        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/service/impl/AdminServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/impl/AdminJDBCDao.java" />
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/JDBCUtil.java" />
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/config/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/PropertiesUtil.java" />
@@ -195,20 +152,24 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/backstage/inc/top.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/backstage/admin/update.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/backstage/nav.jsp" />
-        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminSetStatus.java" />
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminLoginJsp.java" />
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminLogout.java" />
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminList.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/backstage/admin/add.jsp" />
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminDelete.java" />
-        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/IAdminDao.java" />
-        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminAdd.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/backstage/login.jsp" />
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminAddJsp.java" />
-        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminLogin.java" />
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminUpdateJsp.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/backstage/admin/list.jsp" />
+        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminLogin.java" />
+        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminAdd.java" />
+        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/C3P0Utils.java" />
+        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/service/impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/service/AdminService.java" />
+        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/IAdminDao.java" />
+        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminSetStatus.java" />
         <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminUpdate.java" />
+        <option value="$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/impl/AdminJDBCDao.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/backstage/admin/list.jsp" />
       </list>
     </option>
   </component>
@@ -229,9 +190,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-156" />
-    <option name="y" value="64" />
-    <option name="width" value="1694" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
     <option name="height" value="1066" />
   </component>
   <component name="ProjectView">
@@ -239,7 +200,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -277,12 +237,57 @@
             <path>
               <item name="SubmitMerger" type="b2602c69:ProjectViewProjectNode" />
               <item name="SubmitMerger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wangzhenbang" type="462c0819:PsiDirectoryNode" />
+              <item name="SubmitMerger" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubmitMerger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubmitMerger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wangzhenbang" type="462c0819:PsiDirectoryNode" />
+              <item name="SubmitMerger" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubmitMerger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubmitMerger" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubmitMerger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubmitMerger" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubmitMerger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubmitMerger" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="backstage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubmitMerger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubmitMerger" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SubmitMerger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -291,12 +296,21 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/c.tld" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3.数据池/lib/commons-dbutils-1.7.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Desktop\SubmitMerger\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wangzhenbang.SubmitMerger.util" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Desktop\SubmitMerger\src\com\wangzhenbang\SubmitMerger\config" />
       <recent name="E:\Desktop\SubmitMerger\src\com\wangzhenbang\SubmitMerger\util" />
@@ -440,14 +454,17 @@
       <updated>1544325969077</updated>
       <workItem from="1544325973785" duration="24194000" />
       <workItem from="1544516256868" duration="3512000" />
+      <workItem from="1544527773529" duration="2472000" />
+      <workItem from="1544609375800" duration="8816000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27706000" />
+    <option name="totallyTimeSpent" value="38994000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
@@ -456,24 +473,24 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.1317734" />
+      <window_info anchor="right" id="Database" order="5" weight="0.1317734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32988507" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32879817" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2585034" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35034013" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32988507" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49925485" visible="true" weight="0.2432266" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8027211" visible="true" weight="0.19150247" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Favorites" order="5" sideWeight="0.5007452" side_tool="true" weight="0.21305418" />
+      <window_info id="Favorites" order="5" sideWeight="0.19727892" side_tool="true" visible="true" weight="0.19150247" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.31494254" />
@@ -499,51 +516,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/po/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/impl/CustomerJDBCDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="160" column="13" lean-forward="true" selection-start-line="160" selection-start-column="13" selection-end-line="160" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2252033b-115b-4b6b-8f83-3d76ab43faa0/schema/submitmerger/table/customer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="177" column="22" selection-start-line="177" selection-start-column="22" selection-end-line="177" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="676" column="16" selection-start-line="676" selection-start-column="16" selection-end-line="676" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/config/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -558,9 +530,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/front/img/face/a1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/front/img/face/a1.jpg" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/backstage/admin/addAction.jsp" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/backstage/admin/updateAction.jsp" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/backstage/admin/delete.jsp" />
@@ -578,23 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/service/impl/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/DAOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -605,54 +558,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/JDBCUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-383">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/PageInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-596">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/PropertiesUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/pagebg1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/pagebg2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/pagebg3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/prev-next-bg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/prev-next-bg1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/pagebg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/prev-next-bg3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/prev-next-bg2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/pagebg1.png" />
+    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/pagebg2.png" />
+    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/pagebg3.png" />
+    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/prev-next-bg.png" />
+    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/prev-next-bg1.png" />
+    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/pagebg.png" />
+    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/prev-next-bg3.png" />
+    <entry file="file://$PROJECT_DIR$/web/backstage/img/page/prev-next-bg2.png" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/backstage/nav.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -681,20 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/backstage/admin/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/backstage/admin/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/standardSchemas/xhtml1-transitional.dtd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -702,27 +601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/backstage/admin/update.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/ICustomerDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminAdd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminAddJsp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="275">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -731,7 +613,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminDelete.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
+        <state relative-caret-position="300">
           <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -739,50 +621,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminList.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminAddJsp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="482">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c3p0-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="8" column="57" lean-forward="true" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../3.数据池/lib/c3p0-0.9.5.2.jar!/com/mchange/v2/c3p0/ComboPooledDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/C3P0Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/service/impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/PageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+          <folding>
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../3.数据池/lib/commons-dbutils-1.7.jar!/org/apache/commons/dbutils/AbstractQueryRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="895">
+          <caret line="265" column="44" selection-start-line="265" selection-start-column="44" selection-end-line="265" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/backstage/admin/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../3.数据池/lib/commons-dbutils-1.7.jar!/org/apache/commons/dbutils/QueryRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="227" column="25" lean-forward="true" selection-start-line="227" selection-start-column="25" selection-end-line="227" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="65" />
+        <state relative-caret-position="207">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/backstage/admin/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="84" column="7" lean-forward="true" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminLoginJsp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="173">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminLogout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminSetStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -791,8 +758,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminUpdate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        <state relative-caret-position="380">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -801,8 +768,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminUpdateJsp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+        <state relative-caret-position="50">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/backstage/admin/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminSetStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/controller/AdminLogout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/PropertiesUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/util/JDBCUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -811,28 +822,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/IAdminDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="216">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/ICustomerDao.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/impl/CustomerJDBCDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-350">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangzhenbang/SubmitMerger/dao/impl/AdminJDBCDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6025">
-          <caret line="241" column="45" selection-start-line="241" selection-start-column="45" selection-end-line="241" selection-end-column="45" />
+        <state relative-caret-position="900">
+          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -842,9 +850,81 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>SubmitMerger:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SubmitMerger</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

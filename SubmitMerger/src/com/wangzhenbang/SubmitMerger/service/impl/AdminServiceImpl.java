@@ -37,10 +37,8 @@ public class AdminServiceImpl implements AdminService {
 
 
 
-    public List<Admin> list(String username , String nickname){
-        if(username == null) username = "";
-        if(nickname == null) nickname = "";
-        List<Admin> list = adminDao.list(username, nickname);
+    public List<Admin> list(){
+        List<Admin> list = adminDao.list();
         return list;
     }
 

@@ -18,13 +18,15 @@ public interface IAdminDao {
     // 根据用户名获得Admin
     public Admin findByName(String username);
 
-    public void add(Admin admin);
+    public void add(String username,String password,String nickname);
 
     public void delete(int id);
 
-    public void update(Admin admin);
+    public void update(String password,String nickname,int id);
 
-    public List<Admin> list(String username, String nickname);
+    public void updateStatus(String s,int id);
+
+    public List<Admin> list();
 
     public PageInfo list(String username, String nickname, int currentPage, int pageSize);
 

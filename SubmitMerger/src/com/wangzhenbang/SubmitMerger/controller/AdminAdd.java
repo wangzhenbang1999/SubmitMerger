@@ -43,15 +43,9 @@ public class AdminAdd extends HttpServlet {
         if(!validate) {
             request.getRequestDispatcher("WEB-INF/backstage/admin/add.jsp").forward(request, response);
         }
-        Admin admin = new Admin();
-        admin.setNickname(nickname);
-        admin.setPassword(password);
-        admin.setUsername(username);
-        admin.setAdminType(0); //0表示普通管理员，1表示超级管理员
-        admin.setStatus(0);  //0表示正常，1表示冻结
         IAdminDao adminDao = DAOFactory.getAdminDao();
         try{
-            adminDao.add(admin);
+            adminDao.add(username,password,username);
             response.sendRedirect("list.jsp");
         } catch(SubmitMergerException e) {
             response.getWriter().print(e.getMessage());

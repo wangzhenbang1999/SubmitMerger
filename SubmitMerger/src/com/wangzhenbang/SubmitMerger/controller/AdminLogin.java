@@ -25,10 +25,9 @@ public class AdminLogin extends HttpServlet {
 
             boolean result = as.login(request,username,password);
 
-
             if(result) {
                 request.getSession().setAttribute("isLogin","1");
-                request.getRequestDispatcher("list.jsp").forward(request, response);
+                response.sendRedirect("list.jsp");
             }else {
                 request.getRequestDispatcher("WEB-INF/backstage/error.jsp").forward(request, response);
             }
